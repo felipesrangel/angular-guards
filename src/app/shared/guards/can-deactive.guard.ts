@@ -3,7 +3,7 @@ import { ActivatedRouteSnapshot, CanDeactivate, RouterStateSnapshot, UrlTree } f
 import { Observable } from 'rxjs';
 
 
-import { AccountComponent } from '../account/account.component';
+import { AccountComponent } from '../pages/account/account.component';
 import { compileNgModule } from '@angular/compiler';
 
 @Injectable({
