@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class AccountComponent implements OnInit{
   constructor(){}
 
+  public exit(): boolean{
+    if(confirm("Você quer sair?")){
+      return true;
+    }
+    return false;
+  }
+
   ngOnInit(): void {
       
   }
