@@ -15,6 +15,15 @@ export class CanLoadGuard implements CanLoad {
     | UrlTree> 
     | boolean 
     | UrlTree {
-    return true;
+
+      if(segments[1]?.path === 'leads'){
+        console.log(route);
+        console.log(segments);
+        return true;
+      }
+    alert('Modulo não foi carregado')
+    console.log(route);
+    console.log(segments);
+    return false;
   }
 }
